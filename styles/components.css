@@ -1107,3 +1107,59 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ===== ENHANCED LAYOUT FOR MODERN AESTHETICS ===== */
+
+/* Updated Container Spacing */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+/* Improved Section Padding */
+.section {
+  padding: var(--space-16) 0;
+}
+
+/* Enhanced Header Layout */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-6) var(--space-4);
+}
+
+/* Updated Navigation Links */
+.nav-links {
+  display: flex;
+  gap: var(--space-6);
+}
+
+.nav-link {
+  font-size: var(--text-lg);
+  font-weight: var(--font-medium);
+  color: var(--color-neutral-700);
+  transition: color var(--transition-fast);
+}
+
+.nav-link:hover {
+  color: var(--color-accent);
+}
+
+/* Footer Layout */
+.footer {
+  background-color: var(--color-secondary);
+  color: var(--color-neutral-300);
+  padding: var(--space-12) var(--space-4);
+  text-align: center;
+}
+
+.footer a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
