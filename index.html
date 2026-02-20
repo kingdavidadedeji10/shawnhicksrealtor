@@ -34,14 +34,14 @@
             
             <nav class="nav" role="navigation">
                 <ul class="nav-links">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#properties" class="nav-link">Properties</a></li>
-                    <li><a href="#decor" class="nav-link">Decor Shop</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#team" class="nav-link">Team</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#blog" class="nav-link">Blog</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="properties.html" class="nav-link">Properties</a></li>
+                    <li><a href="decor.html" class="nav-link">Decor Shop</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="team.html" class="nav-link">Team</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
 
@@ -77,20 +77,188 @@
             <button class="mobile-menu-close">&times;</button>
         </div>
         <ul class="mobile-menu-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#properties">Properties</a></li>
-            <li><a href="#decor">Decor Shop</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="decor.html">Decor Shop</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Main Content -->
-    <main id="main-content">
-        <!-- Pages will be dynamically loaded here -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="container">
+                    <div class="hero-text">
+                        <h1>Find Your Dream Home & Perfect Interior</h1>
+                        <p>Combining premium real estate expertise with exceptional interior design to create spaces that truly feel like home.</p>
+                        <div class="hero-actions">
+                            <a href="properties.html" class="btn btn-primary">Browse Properties</a>
+                            <a href="decor.html" class="btn btn-outline">Shop Decor</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://picsum.photos/1200/800?random=hero" alt="Beautiful home interior">
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <h2>Why Choose Shawn Hicks Realtor?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Premium Properties</h3>
+                        <p>Curated selection of high-quality homes in desirable locations</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Interior Design</h3>
+                        <p>Complete interior design services to make your house feel like home</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Expert Team</h3>
+                        <p>Professional agents and designers with years of experience</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Full Service</h3>
+                        <p>From finding your home to decorating it, we handle everything</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Properties -->
+        <section class="featured-properties">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Properties</h2>
+                    <a href="properties.html" class="btn btn-outline">View All Properties</a>
+                </div>
+                <div class="properties-grid" id="featured-properties-grid">
+                    <!-- Featured properties will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Decor</h2>
+                    <a href="decor.html" class="btn btn-outline">Shop All Decor</a>
+                </div>
+                <div class="products-grid" id="featured-products-grid">
+                    <!-- Featured products will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="services-overview">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Real Estate</h3>
+                        <ul>
+                            <li>Buying & Selling</li>
+                            <li>Market Analysis</li>
+                            <li>Property Management</li>
+                            <li>Investment Consultation</li>
+                        </ul>
+                        <a href="services.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Interior Design</h3>
+                        <ul>
+                            <li>Full Home Design</li>
+                            <li>Room Makeovers</li>
+                            <li>Home Staging</li>
+                            <li>Decor Shopping</li>
+                        </ul>
+                        <a href="services.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>What Our Clients Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Shawn helped us find our dream home and then transformed it into something beyond our imagination. The whole process was seamless!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/60/60?random=1" alt="Client">
+                            <div>
+                                <strong>Sarah Johnson</strong>
+                                <span>Happy Homeowner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The interior design service exceeded our expectations. Our home feels like a luxury magazine spread, but still comfortable for our family."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/60/60?random=2" alt="Client">
+                            <div>
+                                <strong>Mike Chen</strong>
+                                <span>Interior Design Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Professional, knowledgeable, and truly cares about finding the perfect match. I wouldn't work with anyone else!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/60/60?random=3" alt="Client">
+                            <div>
+                                <strong>Emily Rodriguez</strong>
+                                <span>Repeat Client</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Find Your Dream Home?</h2>
+                    <p>Let's work together to find the perfect property and create your ideal living space.</p>
+                    <div class="cta-actions">
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                        <a href="tel:(555)123-4567" class="btn btn-outline">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -111,11 +279,11 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#properties">Properties</a></li>
-                        <li><a href="#decor">Decor Shop</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#team">Our Team</a></li>
-                        <li><a href="#about">About Us</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="decor.html">Decor Shop</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="about.html">About Us</a></li>
                     </ul>
                 </div>
                 
@@ -202,7 +370,117 @@
     <script src="js/data.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/components.js"></script>
-    <script src="js/pages.js"></script>
-    <script src="js/app.js"></script>
+    <script>
+        // Homepage functionality
+        document.addEventListener('DOMContentLoaded', async function() {
+            await loadFeaturedContent();
+            setupMobileMenu();
+            updateCartAndWishlistCounts();
+            setupHeaderActions();
+        });
+
+        async function loadFeaturedContent() {
+            try {
+                const api = new FakeAPI();
+                const [propertiesData, productsData] = await Promise.all([
+                    api.getProperties(),
+                    api.getProducts()
+                ]);
+
+                // Load featured properties (first 3)
+                const featuredProperties = propertiesData.properties.slice(0, 3);
+                const propertiesGrid = document.getElementById('featured-properties-grid');
+                if (propertiesGrid) {
+                    propertiesGrid.innerHTML = featuredProperties.map(property => createPropertyCard(property)).join('');
+                    
+                    // Add event listeners
+                    featuredProperties.forEach(property => {
+                        const card = propertiesGrid.querySelector(`[data-property-id="${property.id}"]`);
+                        if (card) {
+                            card.addEventListener('click', () => {
+                                window.location.href = `properties.html#property-${property.id}`;
+                            });
+                        }
+                    });
+                }
+
+                // Load featured products (first 4)
+                const featuredProducts = productsData.products.slice(0, 4);
+                const productsGrid = document.getElementById('featured-products-grid');
+                if (productsGrid) {
+                    productsGrid.innerHTML = featuredProducts.map(product => createProductCard(product)).join('');
+                    
+                    // Add event listeners
+                    featuredProducts.forEach(product => {
+                        const card = productsGrid.querySelector(`[data-product-id="${product.id}"]`);
+                        if (card) {
+                            card.addEventListener('click', () => {
+                                window.location.href = `decor.html#product-${product.id}`;
+                            });
+                        }
+                    });
+                }
+            } catch (error) {
+                console.error('Error loading featured content:', error);
+            }
+        }
+
+        function setupMobileMenu() {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const menuClose = document.querySelector('.mobile-menu-close');
+            const menuOverlay = document.querySelector('.mobile-menu-overlay');
+            const mobileMenu = document.querySelector('.mobile-menu');
+
+            [menuToggle, menuClose, menuOverlay].forEach(element => {
+                if (element) {
+                    element.addEventListener('click', () => {
+                        document.body.classList.toggle('mobile-menu-open');
+                    });
+                }
+            });
+        }
+
+        function setupHeaderActions() {
+            const searchBtn = document.querySelector('.search-btn');
+            const wishlistBtn = document.querySelector('.wishlist-btn');
+            const cartBtn = document.querySelector('.cart-btn');
+            const accountBtn = document.querySelector('.account-btn');
+
+            if (searchBtn) {
+                searchBtn.addEventListener('click', () => {
+                    window.location.href = 'properties.html';
+                });
+            }
+
+            if (wishlistBtn) {
+                wishlistBtn.addEventListener('click', () => {
+                    showToast('Wishlist feature - navigate to properties or decor pages to add items', 'info');
+                });
+            }
+
+            if (cartBtn) {
+                cartBtn.addEventListener('click', () => {
+                    window.location.href = 'decor.html#cart';
+                });
+            }
+
+            if (accountBtn) {
+                accountBtn.addEventListener('click', () => {
+                    window.location.href = 'contact.html';
+                });
+            }
+        }
+
+        function updateCartAndWishlistCounts() {
+            const cart = new Cart();
+            const wishlist = new Wishlist();
+            
+            const cartCount = document.getElementById('cart-count');
+            const wishlistCount = document.getElementById('wishlist-count');
+            
+            if (cartCount) cartCount.textContent = cart.getCount();
+            if (wishlistCount) wishlistCount.textContent = wishlist.getCount();
+        }
+    </script>
 </body>
 </html>
