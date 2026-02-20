@@ -42,7 +42,7 @@
 }
 
 .btn-outline.loading::after {
-  border-color: rgba(184, 134, 11, 0.3);
+  border-color: var(--color-accent-alpha);
   border-top-color: var(--color-accent);
 }
 
@@ -148,7 +148,7 @@
 .form-textarea:focus {
   outline: none;
   border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.12);
+  box-shadow: 0 0 0 3px var(--color-accent-alpha);
 }
 
 .form-input.error,

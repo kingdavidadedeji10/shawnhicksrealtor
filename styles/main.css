@@ -3,9 +3,11 @@
   /* Colors - Elegant, Warm, Professional Palette */
   --color-primary: #1A1A2E;        /* Rich charcoal */
   --color-secondary: #1E3A5F;      /* Deep navy accent */
+  --color-hero-dark: #0D0D1A;      /* Deepest background for hero gradient */
   --color-accent: #B8860B;         /* Muted gold/bronze */
   --color-accent-light: #C4A052;   /* Lighter gold */
   --color-accent-hover: #9A7009;   /* Darker gold for hover */
+  --color-accent-alpha: rgba(184, 134, 11, 0.12); /* Gold with transparency for focus rings */
 
   /* Warm neutral scale */
   --color-neutral-50: #F5F5F3;     /* Warm off-white */
@@ -804,7 +806,7 @@ p {
 
 /* ===== PAGE LAYOUTS ===== */
 .page-hero {
-  background: linear-gradient(135deg, #1E3A5F 0%, #1A1A2E 100%);
+  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
   color: var(--color-white);
   padding: var(--space-16) 0 var(--space-12);
   text-align: center;
@@ -830,7 +832,7 @@ p {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #1E3A5F 0%, #1A1A2E 60%, #0D0D1A 100%);
+  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 60%, var(--color-hero-dark) 100%);
   color: var(--color-white);
   position: relative;
   overflow: hidden;
@@ -1080,7 +1082,7 @@ p {
 /* CTA Section */
 .cta-section {
   padding: var(--space-20) 0;
-  background: linear-gradient(135deg, #1E3A5F 0%, #1A1A2E 100%);
+  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
   color: var(--color-white);
   text-align: center;
 }
