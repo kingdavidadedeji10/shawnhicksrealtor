@@ -571,7 +571,38 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initialize lazy loading
   Observer.lazy();
   Observer.animation();
+
+  // Header scroll shadow
+  const header = document.querySelector('.header');
+  if (header) {
+    window.addEventListener('scroll', throttle(function() {
+      header.classList.toggle('scrolled', window.scrollY > 10);
+    }, 100));
+  }
+
+  // Page transition progress bar on link clicks
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a[href]');
+    if (link && isInternalPageLink(link)) {
+      const bar = document.getElementById('page-progress-bar');
+      if (bar) {
+        bar.style.width = '0';
+        bar.classList.add('animating');
+      }
+    }
+  });
   
-  // Log performance info
   console.log('Shawn Hicks Realtor - Utilities Loaded');
 });
+
+// Global helper alias for toast notifications
+function showToast(message, type, duration) {
+  Toast.show(message, type, duration);
+}
+
+// Helper: returns true if a link navigates to another page on the same origin
+function isInternalPageLink(link) {
+  if (!link.href || link.hostname !== window.location.hostname) return false;
+  const href = link.getAttribute('href') || '';
+  return !href.startsWith('#') && !href.startsWith('tel:') && !href.startsWith('mailto:');
+}
