@@ -1,4 +1,4 @@
-# Shawn Hicks Realtor
+# Shawn Hicks LLC
 
 A modern, professional website combining real estate listings with interior decor shopping. Built with vanilla HTML, CSS, and JavaScript for optimal performance and compatibility.
 

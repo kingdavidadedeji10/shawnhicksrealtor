@@ -496,7 +496,7 @@ p {
 }
 
 /* ===== MAIN CONTENT ===== */
-#main-content {
+.main-content {
   margin-top: 80px; /* Header height */
   min-height: calc(100vh - 80px);
 }
@@ -1122,10 +1122,132 @@ p {
 
 /* Team Grid */
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--space-8);
   margin-top: var(--space-12);
+  justify-content: center;
+  padding: var(--space-8) 0;
+}
+
+.team-grid .team-card {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Horizontal Team Card Layout */
+.team-card.team-card-horizontal {
+  display: flex !important;
+  flex-direction: row !important;
+  overflow: hidden;
+  min-height: 500px;
+  align-items: stretch;
+}
+
+.team-card.team-card-horizontal .team-card-image {
+  flex: 0 0 40% !important;
+  width: 40% !important;
+  min-width: 300px;
+  position: relative;
+  overflow: hidden;
+  display: block !important;
+}
+
+.team-card.team-card-horizontal .team-card-image img {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 500px;
+  object-fit: cover !important;
+  object-position: center;
+}
+
+.team-card.team-card-horizontal .team-card-content {
+  flex: 1 !important;
+  width: 60% !important;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-10);
+  background: var(--color-white);
+}
+
+.team-card-header {
+  margin-bottom: var(--space-6);
+}
+
+.team-card-name {
+  font-size: var(--text-4xl);
+  font-family: var(--font-heading);
+  color: var(--color-dark);
+  margin-bottom: var(--space-2);
+}
+
+.team-title {
+  font-size: var(--text-xl);
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+  font-weight: 600;
+}
+
+.team-experience {
+  color: var(--color-text-light);
+  font-size: var(--text-base);
+}
+
+.team-card-bio {
+  flex: 1;
+  margin-bottom: var(--space-6);
+}
+
+.team-card-bio p {
+  font-size: var(--text-lg);
+  line-height: 1.8;
+  color: var(--color-text);
+  margin-bottom: var(--space-6);
+}
+
+.team-specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.team-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+  gap: var(--space-4);
+}
+
+.team-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-base);
+}
+
+.contact-info-item i {
+  color: var(--color-primary);
+  width: 20px;
+}
+
+.contact-info-item a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info-item a:hover {
+  color: var(--color-primary);
 }
 
 /* Blog Grid */

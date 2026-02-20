@@ -23,14 +23,7 @@ const PLACEHOLDER_IMAGES = {
     'https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=600&q=80'
   ],
   team: [
-    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
-    'https://images.unsplash.com/photo-1494790108755-2616b612b412?w=400&q=80',
-    'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80',
-    'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80',
-    'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&q=80',
-    'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&q=80',
-    'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80',
-    'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?w=400&q=80'
+    'images/batts.jpeg',
   ],
   blog: [
     'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80',
@@ -392,14 +385,14 @@ const TEAM_DATA = [
   {
     id: 1,
     name: "Shawn Hicks",
-    title: "Founder & Principal Realtor",
+    title: "CEO & Founder",
     role: "Realtor",
     specialty: ["Luxury Homes", "Investment Properties", "First-Time Buyers"],
-    bio: "With over 15 years in real estate, Shawn combines market expertise with personalized service. Specializes in luxury properties and has helped over 500 families find their dream homes.",
-    image: getRandomImage('team'),
-    phone: "(555) 123-4567",
-    email: "shawn@shawnhicksrealtor.com",
-    experience: "15 years",
+    bio: "With over 20 years of experience, Shawn founder of Shawn Hicks LLC to provide a seamless experience combining real estate excellence with interior design expertise. He has helped over 500 families find their dream homes.",
+    image: "images/batts.jpeg",
+    phone: "",
+    email: "info@shawnhicksrealtor.com",
+    experience: "20 years",
     certifications: ["Certified Residential Specialist", "Luxury Home Marketing Specialist"],
     achievements: ["Top Agent 2024", "500+ Homes Sold", "Client Satisfaction 99%"],
     socialMedia: {

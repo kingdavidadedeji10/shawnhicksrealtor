@@ -592,7 +592,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
-  console.log('Shawn Hicks Realtor - Utilities Loaded');
+  console.log('Shawn Hicks LLC - Utilities Loaded');
 });
 
 // Global helper alias for toast notifications

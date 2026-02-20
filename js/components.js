@@ -117,28 +117,35 @@ function createProductCard(product) {
 // Team Member Card Component
 function createTeamCard(member) {
   return `
-    <div class="card team-card" data-member-id="${member.id}">
-      <div class="card-image">
-        <img src="${member.image}" alt="${member.name}" loading="lazy">
+    <div class="card team-card team-card-horizontal" data-member-id="${member.id}" style="display: flex; flex-direction: row;">
+      <div class="team-card-image" style="flex: 0 0 40%; width: 40%;">
+        <img src="${member.image}" alt="${member.name}" loading="lazy" style="width: 100%; height: 100%; min-height: 500px; object-fit: cover;">
       </div>
-      <div class="card-body">
-        <div class="card-title">${member.name}</div>
-        <div class="team-title">${member.title}</div>
-        <div class="team-specialties">
-          ${member.specialty.slice(0, 2).map(s => `<span class="badge">${s}</span>`).join('')}
+      <div class="team-card-content" style="flex: 1; width: 60%; padding: 40px;">
+        <div class="team-card-header">
+          <h2 class="team-card-name">${member.name}</h2>
+          <div class="team-title">${member.title}</div>
+          <div class="team-experience">${member.experience} of experience</div>
         </div>
-        <div class="card-description">
-          ${member.bio.length > 100 ? member.bio.substring(0, 100) + '...' : member.bio}
+        <div class="team-card-bio">
+          <p>${member.bio}</p>
+          <div class="team-specialties">
+            ${member.specialty.map(s => `<span class="badge">${s}</span>`).join('')}
+          </div>
         </div>
-        <div class="team-contact">
-          <a href="tel:${member.phone}" class="btn btn-outline btn-sm">
-            <i class="fas fa-phone"></i>
-          </a>
-          <a href="mailto:${member.email}" class="btn btn-outline btn-sm">
-            <i class="fas fa-envelope"></i>
-          </a>
-          <button class="btn btn-primary btn-sm contact-member-btn" data-member-id="${member.id}">
-            Contact
+        <div class="team-card-footer">
+          <div class="team-contact-info">
+            <div class="contact-info-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:${member.email}">${member.email}</a>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>3122 Nw 27th St, Gainesville, FL 32605</span>
+            </div>
+          </div>
+          <button class="btn btn-primary contact-member-btn" data-member-id="${member.id}">
+            <i class="fas fa-envelope"></i> Send Message
           </button>
         </div>
       </div>

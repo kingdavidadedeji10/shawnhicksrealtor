@@ -14,7 +14,7 @@ class ShawnHicksRealtorApp {
     this.setupNavigation();
     this.handleInitialRoute();
     this.initializeComponents();
-    console.log('Shawn Hicks Realtor App Initialized');
+    console.log('Shawn Hicks LLC App Initialized');
   }
 
   // Bind global event listeners

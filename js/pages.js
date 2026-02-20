@@ -24,7 +24,7 @@ Object.assign(ShawnHicksRealtorApp.prototype, {
               <div class="container">
                 <div class="hero-text">
                   <h1 class="hero-title">Your Dream Home Awaits</h1>
-                  <p class="hero-subtitle">Discover exceptional properties and create beautiful interiors with Shawn Hicks Realtor. Where luxury living meets impeccable design.</p>
+                  <p class="hero-subtitle">Discover exceptional properties and create beautiful interiors with Shawn Hicks LLC. Where luxury living meets impeccable design.</p>
                   <div class="hero-ctas">
                     <button class="btn btn-primary btn-lg" onclick="app.navigateTo('properties')">
                       <i class="fas fa-home"></i> Explore Properties
@@ -513,7 +513,7 @@ Object.assign(ShawnHicksRealtorApp.prototype, {
               {text: 'Home', url: '#home'},
               {text: 'About Us', url: '#about'}
             ])}
-            <h1>About Shawn Hicks Realtor</h1>
+            <h1>About Shawn Hicks LLC</h1>
             <p>Your trusted partner in real estate and interior design for over 15 years.</p>
           </div>
         </div>
@@ -525,7 +525,7 @@ Object.assign(ShawnHicksRealtorApp.prototype, {
               <div class="grid grid-2 gap-12 items-center">
                 <div>
                   <h2>Our Story</h2>
-                  <p>Founded in 2011, Shawn Hicks Realtor began with a simple vision: to provide exceptional real estate services while helping clients create beautiful, functional living spaces. What started as a boutique real estate firm has evolved into a comprehensive lifestyle brand that seamlessly blends property expertise with interior design excellence.</p>
+                  <p>Founded in 2011, Shawn Hicks LLC began with a simple vision: to provide exceptional real estate services while helping clients create beautiful, functional living spaces. What started as a boutique real estate firm has evolved into a comprehensive lifestyle brand that seamlessly blends property expertise with interior design excellence.</p>
                   <p>Our unique approach combines deep market knowledge with refined design sensibility, ensuring that our clients not only find their perfect home but also transform it into a space that truly reflects their lifestyle and aspirations.</p>
                 </div>
                 <div>
