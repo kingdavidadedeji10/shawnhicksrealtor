@@ -27,17 +27,23 @@
 .btn.loading {
   position: relative;
   color: transparent;
+  pointer-events: none;
 }
 
 .btn.loading::after {
   content: '';
   position: absolute;
-  width: 20px;
-  height: 20px;
-  border: 2px solid currentColor;
-  border-top: 2px solid transparent;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: var(--color-white);
   border-radius: var(--radius-full);
-  animation: spin 1s linear infinite;
+  animation: spin 0.7s linear infinite;
+}
+
+.btn-outline.loading::after {
+  border-color: rgba(184, 134, 11, 0.3);
+  border-top-color: var(--color-accent);
 }
 
 /* Button Variants */
@@ -48,8 +54,8 @@
 }
 
 .btn-primary:hover:not(:disabled) {
-  background: var(--color-warning);
-  border-color: var(--color-warning);
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
 }
@@ -76,6 +82,7 @@
 .btn-outline:hover:not(:disabled) {
   background: var(--color-accent);
   color: var(--color-white);
+  transform: translateY(-1px);
 }
 
 .btn-ghost {
@@ -117,7 +124,9 @@
   display: block;
   margin-bottom: var(--space-2);
   font-weight: var(--font-medium);
-  color: var(--color-neutral-700);
+  color: var(--color-neutral-800);
+  font-size: var(--text-sm);
+  letter-spacing: 0.01em;
 }
 
 .form-input,
@@ -130,6 +139,7 @@
   font-family: inherit;
   font-size: var(--text-base);
   background: var(--color-white);
+  color: var(--color-primary);
   transition: all var(--transition-fast);
 }
 
@@ -138,7 +148,7 @@
 .form-textarea:focus {
   outline: none;
   border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.1);
+  box-shadow: 0 0 0 3px rgba(184, 134, 11, 0.12);
 }
 
 .form-input.error,
@@ -212,12 +222,13 @@
   box-shadow: var(--shadow-sm);
   overflow: hidden;
   transition: all var(--transition-base);
-  border: 1px solid var(--color-neutral-100);
+  border: 1px solid var(--color-neutral-200);
 }
 
 .card:hover {
   box-shadow: var(--shadow-lg);
   transform: translateY(-4px);
+  border-color: var(--color-neutral-100);
 }
 
 .card-image {
@@ -294,6 +305,7 @@
   font-weight: var(--font-semibold);
   margin-bottom: var(--space-2);
   color: var(--color-primary);
+  font-family: var(--font-heading);
 }
 
 .card-meta {
@@ -302,14 +314,14 @@
   gap: var(--space-4);
   margin-bottom: var(--space-3);
   font-size: var(--text-sm);
-  color: var(--color-neutral-500);
+  color: var(--color-neutral-600);
 }
 
 .card-description {
-  color: var(--color-neutral-600);
+  color: var(--color-neutral-700);
   margin-bottom: var(--space-4);
   font-size: var(--text-sm);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .card-price {
@@ -317,6 +329,7 @@
   font-weight: var(--font-bold);
   color: var(--color-accent);
   margin-bottom: var(--space-4);
+  font-family: var(--font-heading);
 }
 
 .card-footer {
@@ -436,6 +449,7 @@
   margin: 0;
   font-size: var(--text-xl);
   color: var(--color-primary);
+  font-family: var(--font-heading);
 }
 
 .modal-close {
@@ -543,7 +557,7 @@
 }
 
 .dropdown-item:hover {
-  background: var(--color-accent-light);
+  background: var(--color-neutral-50);
   color: var(--color-accent);
 }
 
@@ -577,12 +591,12 @@
 
 .tab-button:hover {
   color: var(--color-accent);
-  background: var(--color-accent-light);
+  background: var(--color-neutral-50);
 }
 
 .tab-button.active {
   color: var(--color-accent);
-  background: var(--color-accent-light);
+  background: var(--color-neutral-50);
 }
 
 .tab-button.active::after {
@@ -692,6 +706,7 @@
   background: var(--color-white);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-neutral-200);
 }
 
 .skeleton-image {
@@ -1137,7 +1152,7 @@
 }
 
 .nav-link {
-  font-size: var(--text-lg);
+  font-size: var(--text-sm);
   font-weight: var(--font-medium);
   color: var(--color-neutral-700);
   transition: color var(--transition-fast);
@@ -1149,17 +1164,17 @@
 
 /* Footer Layout */
 .footer {
-  background-color: var(--color-secondary);
-  color: var(--color-neutral-300);
+  background-color: var(--color-primary);
+  color: var(--color-neutral-400);
   padding: var(--space-12) var(--space-4);
-  text-align: center;
 }
 
 .footer a {
-  color: var(--color-accent);
+  color: var(--color-accent-light);
   text-decoration: none;
 }
 
 .footer a:hover {
+  color: var(--color-white);
   text-decoration: underline;
 }
