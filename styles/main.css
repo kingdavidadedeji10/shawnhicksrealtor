@@ -496,7 +496,7 @@ p {
 }
 
 /* ===== MAIN CONTENT ===== */
-#main-content {
+.main-content {
   margin-top: 80px; /* Header height */
   min-height: calc(100vh - 80px);
 }
