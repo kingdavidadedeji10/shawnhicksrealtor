@@ -11,6 +11,11 @@
     gap: 0.5rem;
   }
   
+  .top-bar-left {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
   .top-bar .social-icons {
     margin-left: 0;
   }
