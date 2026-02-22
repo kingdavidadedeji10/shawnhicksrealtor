@@ -1261,9 +1261,10 @@ p {
 /* Contact Grid */
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1.5fr;
   gap: var(--space-12);
   margin-top: var(--space-12);
+  align-items: start;
 }
 
 .contact-item {
@@ -1274,14 +1275,21 @@ p {
 }
 
 .contact-item i {
-  color: var(--color-primary);
+  color: var(--color-accent);
   font-size: var(--text-xl);
   margin-top: var(--space-1);
+  width: 24px;
+  text-align: center;
 }
 
 .contact-item h4 {
   margin-bottom: var(--space-1);
-  color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.contact-item p {
+  color: var(--color-neutral-300);
+  margin: 0;
 }
 
 /* About Content */
