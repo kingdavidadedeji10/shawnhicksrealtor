@@ -744,7 +744,7 @@ Object.assign(ShawnHicksRealtorApp.prototype, {
                     </div>
                     <div class="contact-details">
                       <h4>Call Us</h4>
-                      <p>Main: (555) 123-4567<br>Mobile: (555) 987-6543</p>
+                      <p>Main: (810) 288-5412<br>Mobile: (555) 987-6543</p>
                     </div>
                   </div>
                   

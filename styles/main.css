@@ -271,7 +271,7 @@ p {
 /* ===== HEADER STYLES ===== */
 .header {
   position: fixed;
-  top: 0;
+  top: 42px; /* Account for top-bar height */
   left: 0;
   right: 0;
   background: var(--color-white);
@@ -497,8 +497,8 @@ p {
 
 /* ===== MAIN CONTENT ===== */
 .main-content {
-  margin-top: 80px; /* Header height */
-  min-height: calc(100vh - 80px);
+  margin-top: 122px; /* Header height (80px) + Top bar height (42px) */
+  min-height: calc(100vh - 122px);
 }
 
 /* Page Transition */

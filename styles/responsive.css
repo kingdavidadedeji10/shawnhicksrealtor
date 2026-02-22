@@ -4,6 +4,17 @@
 
 /* ===== SMALL MOBILE (up to 480px) ===== */
 @media (max-width: 480px) {
+  /* Top Bar adjustments */
+  .top-bar .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .top-bar .social-icons {
+    margin-left: 0;
+  }
+
   /* Typography adjustments */
   h1 {
     font-size: var(--text-3xl);
