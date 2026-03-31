@@ -754,7 +754,7 @@ Object.assign(ShawnHicksRealtorApp.prototype, {
                     </div>
                     <div class="contact-details">
                       <h4>Email Us</h4>
-                      <p>shawn@shawnhicksrealtor.com<br>support@shawnhicksrealtor.com</p>
+                      <p>info@shawnhicksrealtor.com<br>support@shawnhicksrealtor.com</p>
                     </div>
                   </div>
                   
