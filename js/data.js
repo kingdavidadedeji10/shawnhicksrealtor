@@ -391,7 +391,7 @@ const TEAM_DATA = [
     bio: "With over 20 years of experience, Shawn founder of Shawn Hicks LLC to provide a seamless experience combining real estate excellence with interior design expertise. He has helped over 500 families find their dream homes.",
     image: "images/batts.jpeg",
     phone: "",
-    email: "info@shawnhicksrealtor.com",
+    email: "shawn@shawnhicksrealtor.com",
     experience: "20 years",
     certifications: ["Certified Residential Specialist", "Luxury Home Marketing Specialist"],
     achievements: ["Top Agent 2024", "500+ Homes Sold", "Client Satisfaction 99%"],
